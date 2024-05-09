@@ -1,0 +1,160 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+NBY FINANCIAL INSTITUTION
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container-fluid1" style="background:#ffeadb;">
+    <img src="{% static 'akker.jpg' %}" alt="akker Image">
+    <div class="container-fluid-inner" style="background:#ffeadb; float:right;">
+        <h1>Ontsnap aan het bankgedoe - wij houden het simpel!</h1>
+        <div class="emailbar">
+            <form action="#" method="post">
+                <input type="email" name="email" class="email-input" placeholder="Uw Email Adress...">
+                <button type="submit" class="submit-button">Meld je aan</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid2" style="margin-top: 10px; background: #ffeadb;">
+    <div class="customer-feedback-container">
+        <h1>Wat zeggen onze klanten?</h1>
+        <div class="customer-feedback">
+            <div class="feedback-box">
+                <h3>Klant 1</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            </div>
+            <div class="feedback-box">
+                <h3>Klant 2</h3>
+                <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            </div>
+            <div class="feedback-box">
+                <h3>klant 3</h3>
+                <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<style>
+    body, html {
+        background-color:#ffeadb;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid1{
+        margin-top: 10px;
+        
+    }
+
+
+    .container-fluid-inner{
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        width: 650px;
+        height: 500px;
+        color: #000033;
+        font-family: 'Montserrat-Bold';
+    }
+
+    .emailbar {
+            width: 400px; /* Adjust width as needed */
+            height: auto; /* Let the height adjust to content */
+            background-color: #ffeadb;
+            padding: 20px;
+            margin: 0;
+            
+        }
+
+    .email-input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #000033;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        }
+
+    .containter-fluid2{
+        margin-top: 20px;
+        height: 500px;
+    }
+    
+    .customer-feedback-container {
+        height: 400px; /* Adjust the height as needed */
+        overflow-y: auto; /* Add overflow-y: auto to add a vertical scrollbar if needed */
+        background-color: #ffeadb;
+        color: #000033;
+        text-align: center;
+        font-family: 'Montserrat-Bold';
+    }
+
+
+    .customer-feedback {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-family: 'Montserrat-Bold';
+    }
+
+    .feedback-box {
+        background: #04AA6D;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-box h3 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .feedback-box p {
+        font-size: 16px;
+        color: white;
+    }
+
+    .feedback-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
